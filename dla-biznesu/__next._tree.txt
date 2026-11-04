@@ -1,0 +1,5 @@
+:HL["/asistel-strona-podglad/_next/static/chunks/0frn9bow_df25.css","style"]
+:HL["/asistel-strona-podglad/_next/static/media/ab57efd000576a30.p.0.xyi-bdzzdcz.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/asistel-strona-podglad/_next/static/media/b8d1f0a88dfecec3.p.0g0e~i-as20lr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/asistel-strona-podglad/_next/static/chunks/016qnlz3-qo2_.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"dla-biznesu","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"vv4YF0841n9Z8HjEtQlOa"}

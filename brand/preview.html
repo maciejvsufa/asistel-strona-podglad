@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<title>Asistel — logo preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F1E8; --bg-card:#fff; --bg-soft:#EFE9DA;
+    --ink:#141C1A; --ink-soft:#4C5C55; --ink-muted:#7E8A84;
+    --line:#E4DCCB; --sage:#3F6B57; --sage-mid:#6F9881;
+  }
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',ui-sans-serif,system-ui;}
+  .wrap{max-width:960px;margin:0 auto;padding:48px 24px 96px;}
+  h1{font-family:'Fraunces',serif;font-weight:300;font-size:48px;margin:0 0 8px;letter-spacing:-.01em;}
+  h1 .dot{color:var(--sage);}
+  .lead{color:var(--ink-soft);max-width:520px;margin:0 0 40px;}
+  .meta{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-muted);margin:48px 0 12px;}
+  .card{background:var(--bg-card);border:1px solid var(--line);border-radius:20px;padding:32px;display:flex;align-items:center;justify-content:center;min-height:180px;}
+  .card.dark{background:var(--ink);}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .tile{background:var(--bg-card);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;align-items:center;gap:12px;}
+  .tile.dark{background:var(--ink);}
+  .tile .cap{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-muted);}
+  .tile.dark .cap{color:#9aa3a0;}
+  img.wm{height:64px;}
+  img.wm-sm{height:28px;}
+  img.mark{width:120px;height:120px;border-radius:28px;}
+  img.mark-sm{width:56px;height:56px;border-radius:14px;}
+  img.mark-xs{width:24px;height:24px;border-radius:6px;}
+  .favicon-row{display:flex;align-items:center;gap:20px;}
+  .color-row{display:flex;gap:8px;margin-top:24px;flex-wrap:wrap;}
+  .swatch{display:flex;flex-direction:column;gap:4px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--ink-muted);}
+  .swatch .chip{width:64px;height:40px;border-radius:8px;border:1px solid var(--line);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Asistel<span class="dot">.</span></h1>
+  <p class="lead">Logo system w duchu <em>Editorial Calm-Tech</em>. Fraunces light + szałwiowy akcent-kropka. Marka parasolowa — skalowalna poza apteki.</p>
+
+  <div class="meta">Wordmark · primary</div>
+  <div class="card"><img class="wm" src="./asistel-wordmark.svg" alt="Asistel wordmark"/></div>
+
+  <div class="meta">Wordmark · inverse (na ink)</div>
+  <div class="card dark"><img class="wm" src="./asistel-wordmark-inverse.svg" alt="Asistel wordmark inverse"/></div>
+
+  <div class="meta">Mark · app icon / avatar</div>
+  <div class="grid">
+    <div class="tile dark">
+      <img class="mark" src="./asistel-mark.svg" alt="Asistel mark"/>
+      <span class="cap">mark · dark · 120</span>
+    </div>
+    <div class="tile">
+      <img class="mark" src="./asistel-mark-light.svg" alt="Asistel mark light"/>
+      <span class="cap">mark · light · 120</span>
+    </div>
+  </div>
+
+  <div class="meta">Mark · skale (favicon → touch icon)</div>
+  <div class="card">
+    <div class="favicon-row">
+      <img class="mark-xs" src="./asistel-mark.svg" alt="16-ish"/>
+      <img class="mark-sm" src="./asistel-mark.svg" alt="56"/>
+      <img class="mark" src="./asistel-mark.svg" alt="120"/>
+    </div>
+  </div>
+
+  <div class="meta">Glyph · inline (bez tła)</div>
+  <div class="card"><img class="wm" src="./asistel-glyph.svg" alt="A. glyph"/></div>
+
+  <div class="meta">Wordmark · w kontekście top baru</div>
+  <div class="card" style="justify-content:flex-start;padding:20px 24px;">
+    <img class="wm-sm" src="./asistel-wordmark.svg" alt="Asistel small"/>
+  </div>
+
+  <div class="meta">Paleta marki</div>
+  <div class="color-row">
+    <div class="swatch"><div class="chip" style="background:#141C1A"></div>ink · #141C1A</div>
+    <div class="swatch"><div class="chip" style="background:#F5F1E8"></div>cream · #F5F1E8</div>
+    <div class="swatch"><div class="chip" style="background:#3F6B57"></div>sage · #3F6B57</div>
+    <div class="swatch"><div class="chip" style="background:#6F9881"></div>sage-mid · #6F9881</div>
+  </div>
+</div>
+</body>
+</html>
